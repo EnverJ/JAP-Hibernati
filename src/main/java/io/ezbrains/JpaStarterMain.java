@@ -19,6 +19,7 @@ public class JpaStarterMain {
        EntityTransaction transaction = entityManager.getTransaction();
        transaction.begin();
        entityManager.persist(employee);
+       transaction.commit();
 
 
     }

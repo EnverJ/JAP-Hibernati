@@ -6,8 +6,6 @@
     <persistence-unit name="myApp" transaction-type="RESOURCE_LOCAL">
         <!-- Specify the provider (Hibernate in this example) -->
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-        <class>io.ezbrains.Employee</class>
-
         <!-- Specify the JPA database dialect (for Hibernate) -->
         <properties>
             <property name="javax.persistence.jdbc.driver" value="org.h2.Driver"/>
