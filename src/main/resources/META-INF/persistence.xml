@@ -9,7 +9,7 @@
         <!-- Specify the JPA database dialect (for Hibernate) -->
         <properties>
             <property name="javax.persistence.jdbc.driver" value="org.h2.Driver"/>
-            <property name="javax.persistence.jdbc.url" value="jdbc:h2:mem:testdb"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:h2:mem:testdb:http://localhost:8082/login.jsp?jsessionid"/>
             <property name="javax.persistence.jdbc.user" value="sa"/>
             <property name="javax.persistence.jdbc.password" value=""/>
             <!-- Hibernate Specific Properties -->

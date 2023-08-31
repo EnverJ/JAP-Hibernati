@@ -18,7 +18,6 @@
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
             <version>1.4.200</version> <!-- Use the desired H2 version -->
-            <scope>compile</scope>
         </dependency>
     </dependencies>
 
