@@ -8,7 +8,7 @@ import javax.persistence.Table;
 @Table(name = "EMPLOYEE_DATA")
 public class Employee {
 
-   @Id
+   @Id   // primary key
     private  int id;
     private  String name;
 
