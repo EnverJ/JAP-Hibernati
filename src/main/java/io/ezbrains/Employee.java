@@ -11,7 +11,12 @@ import java.util.Date;
 public class Employee {
 
     @Id   // primary key
+    @GeneratedValue(strategy = GenerationType.AUTO)    // GenerationType.SEQUENCE)
     private int id;
+    //1) there are performance implications if  a string is used as a key
+    //2) also wrapper types, char, byte , short, long  can be used as key
+    //3) dont use long format for the id since the precision value needs to be descrete.
+    //4) there are 4 different strategies which can be used for generation of the ID.
     @Column(name = "employee_name", unique = false)  // unique mean if the value is duplicated
     private String name;
     private int age;
