@@ -10,7 +10,6 @@ import java.util.Date;
 @Table(name = "EMPLOYEE_DATA") // (table name is optional, by default it is class name)
 public class Employee {
 
-<<<<<<< HEAD
     @Id   // primary key
     @GeneratedValue(strategy = GenerationType.AUTO)    // GenerationType.SEQUENCE)
     private int id;
@@ -29,6 +28,20 @@ public class Employee {
     private EmployeeType type;
     @Transient// is not going to be saved
     private String debugString;
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                ", ssn='" + ssn + '\'' +
+                ", dob=" + dob +
+                ", type=" + type +
+                ", debugString='" + debugString + '\'' +
+                '}';
+    }
+
     public Date getDob() {
         return dob;
     }
@@ -53,12 +66,6 @@ public class Employee {
     public void setSsn(String ssn) {
         this.ssn = ssn;
     }
-
-=======
-   @Id   // primary key
-    private  int id;
-    private  String name;
->>>>>>> ecaa26f843c82fc7fcbc836336cb4ae0b5855860
 
     public int getId() {
         return id;
