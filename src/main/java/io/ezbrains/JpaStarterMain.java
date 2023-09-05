@@ -16,6 +16,15 @@ public class JpaStarterMain {
         Employee employee = entityManager.find(Employee.class,1);   // select * from Employee_Data where id=1;
         System.out.println(employee);
 
+
+        // delete
+        EntityTransaction transaction = entityManager.getTransaction();
+       transaction.begin();
+       entityManager.remove(employee);
+       transaction.commit();
+       entityManager.close();
+       entityManagerFactory.close();
+
 // Enter data 1
 //        Employee employee = new Employee();
 //        employee.setId(1);
