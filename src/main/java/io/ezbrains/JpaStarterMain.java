@@ -13,17 +13,17 @@ public class JpaStarterMain {
 // find data 2
         EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("myApp"); // persistence is a class and it will connect to persistence.xml
         EntityManager entityManager = entityManagerFactory.createEntityManager(); //save Entity
-        Employee employee = entityManager.find(Employee.class,1);   // select * from Employee_Data where id=1;
-        System.out.println(employee);
+        Employee employee = entityManager.find(Employee.class, 1);   // select * from Employee_Data where id=1;
+        //     System.out.println(employee);  // find
 
 
         // delete
         EntityTransaction transaction = entityManager.getTransaction();
-       transaction.begin();
-       entityManager.remove(employee);
-       transaction.commit();
-       entityManager.close();
-       entityManagerFactory.close();
+        transaction.begin();
+        entityManager.remove(employee);
+        transaction.commit();
+        entityManager.close();
+        entityManagerFactory.close();
 
 // Enter data 1
 //        Employee employee = new Employee();
