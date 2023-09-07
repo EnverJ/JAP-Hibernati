@@ -16,7 +16,7 @@
             <property name="hibernate.show_sql" value="true"/> <!-- Enable SQL logging -->
             <property name="hibernate.format_sql" value="true"/> <!-- Enable SQL formatting -->
             <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/> <!-- Set the Hibernate dialect -->
-            <property name="hibernate.hbm2ddl.auto" value="none"/> <!-- Set schema creation/update behavior -->
+            <property name="hibernate.hbm2ddl.auto" value="create"/> <!-- Set schema creation/update behavior -->
             <property name="hibernate.hbm2ddl.auto" value="update"/>
 
             <!-- Other JPA and Hibernate properties -->
