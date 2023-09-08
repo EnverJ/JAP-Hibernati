@@ -29,6 +29,16 @@ public class Employee {
     @Transient// is not going to be saved
     private String debugString;
 
+    @OneToOne
+    private AccessCard card;
+    public AccessCard getCard() {
+        return card;
+    }
+
+    public void setCard(AccessCard card) {
+        this.card = card;
+    }
+
     @Override
     public String toString() {
         return "Employee{" +

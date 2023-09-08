@@ -26,7 +26,6 @@ public class JpaStarterMain {
 
 // Enter data 1
         Employee employee = new Employee();
-        employee.setId(1);
         employee.setName("Foo Bar");
         employee.setSsn("233");
         employee.setDob(new Date());
@@ -34,7 +33,6 @@ public class JpaStarterMain {
         employee.setType(EmployeeType.FULL_TIME);
 
         Employee employee1 = new Employee();
-        employee1.setId(2);
         employee1.setName("Foo Baz");
         employee1.setSsn("2303");
         employee1.setType(EmployeeType.CONTRACTOR);
@@ -45,11 +43,14 @@ public class JpaStarterMain {
         card1.setIssueDate(new Date());
         card1.setActive(true);
         card1.setFirmwareVersion("1.0.0");
+        employee.setCard(card1);
 
         AccessCard card2 = new AccessCard();
         card2.setIssueDate(new Date());
         card2.setActive(false);
-        card1.setFirmwareVersion("1.2.0");
+        card2.setFirmwareVersion("1.2.0");
+        card2.setId(20);
+        employee1.setCard(card2);
 
 
         // create an entity manager factory. is a service to manage @Entity (data holder)
