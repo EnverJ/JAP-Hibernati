@@ -10,7 +10,7 @@ import java.util.Date;
 @Entity
 public class AccessCard {
     @Id
-   @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
     private Date issueDate;
     private boolean isActive;
