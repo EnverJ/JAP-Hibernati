@@ -6,6 +6,11 @@ All notable changes to this project will be documented in this file.
 ## [Unreleased]
 
 ### Added
+- added CHANGELOG.md file 
+- added EmployeeType class
+- added read function
+- 
+
 
 - Feature 1 description.
 

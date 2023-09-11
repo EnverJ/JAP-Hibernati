@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5f63b88-47bb-4486-9950-65c0ce10e00c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/ezbrains/JpaStarterRead.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/ezbrains/AccessCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ezbrains/AccessCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/ezbrains/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ezbrains/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/ezbrains/JpaStarterMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ezbrains/JpaStarterMainWrite.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
