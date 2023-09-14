@@ -44,13 +44,19 @@ public class JpaStarterMainWrite {
         card1.setActive(true);
         card1.setFirmwareVersion("1.0.0");
         employee.setCard(card1);
+        employee1.setCard(card1);
+        card1.setOwner(employee);
+
 
         AccessCard card2 = new AccessCard();
         card2.setIssueDate(new Date());
         card2.setActive(false);
         card2.setFirmwareVersion("1.2.0");
         card2.setId(20);
+        card1.setOwner(employee1);
         employee1.setCard(card2);
+
+
 
 
         // create an entity manager factory. is a service to manage @Entity (data holder)
