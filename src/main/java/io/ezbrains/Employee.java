@@ -5,6 +5,7 @@ import com.sun.jdi.PrimitiveValue;
 import javax.persistence.*;
 import javax.xml.crypto.Data;
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @Table(name = "EMPLOYEE_DATA") // (table name is optional, by default it is class name)
@@ -31,6 +32,9 @@ public class Employee {
 
     @OneToOne(fetch = FetchType.LAZY)
     private AccessCard card;
+
+    @OneToMany(mappedBy = "employee")
+    private List<PayStub> payStub;
     public AccessCard getCard() {
         return card;
     }
@@ -102,5 +106,13 @@ public class Employee {
 
     public void setType(EmployeeType type) {
         this.type = type;
+    }
+
+    public List<PayStub> getPayStub() {
+        return payStub;
+    }
+
+    public void setPayStub(List<PayStub> payStub) {
+        this.payStub = payStub;
     }
 }
