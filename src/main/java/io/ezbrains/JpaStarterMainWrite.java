@@ -1,7 +1,7 @@
 package io.ezbrains;
+import javax.persistence.EntityManagerFactory;
 
 import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
 import java.util.Date;
@@ -69,8 +69,22 @@ public class JpaStarterMainWrite {
         payStub2.setEmployee(employee1);
         payStub2.setSalary(2000);
 
-        employee.setPayStub(List.of(payStub1, payStub2));
+        EmailGroup group = new EmailGroup();
+        group.setName("Company Watercooler Discussion");
+        group.addMember(employee);
+        group.addMember(employee1);
+        employee.addEmailSubscription(group);
+        employee1.addEmailSubscription(group);
 
+        EmailGroup group1 = new EmailGroup();
+        group1.setName("Engineering");
+        employee.addEmailSubscription(group1);
+        group1.addMember(employee);
+
+
+
+
+        employee.setPayStub(List.of(payStub1, payStub2));
 
 
 
@@ -87,6 +101,9 @@ public class JpaStarterMainWrite {
 
         entityManager.persist(payStub1);
         entityManager.persist(payStub2);
+
+        entityManager.persist(group);
+        entityManager.persist(group1);
 
         transaction.commit();
         entityManager.close();

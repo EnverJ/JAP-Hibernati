@@ -5,11 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5f63b88-47bb-4486-9950-65c0ce10e00c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/ezbrains/PayStub.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/ezbrains/EmailGroup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/ezbrains/JpaStarterUpdate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/ezbrains/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ezbrains/Employee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/ezbrains/JpaStarterMainWrite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ezbrains/JpaStarterMainWrite.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/ezbrains/JpaStarterRead.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ezbrains/JpaStarterRead.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/ezbrains/PayStub.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ezbrains/PayStub.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +47,8 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_directory_selection": "/Users/enverjume/git/jpa-starter/src/main/java"
+    "last_directory_selection": "/Users/enverjume/git/jpa-starter/src/main/java",
+    "settings.editor.selected.configurable": "IntelliLang.Configuration"
   }
 }]]></component>
   <component name="RecentsManager">

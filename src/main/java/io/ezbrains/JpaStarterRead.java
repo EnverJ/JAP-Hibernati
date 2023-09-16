@@ -8,6 +8,9 @@ public class JpaStarterRead {
 
         EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("myApp");
         EntityManager entityManager = entityManagerFactory.createEntityManager();
+        EmailGroup emailGroup = entityManager.find(EmailGroup.class,7);
+        System.out.println("Got email group. Now accessing members ");
+        System.out.println(emailGroup.getMember());
 
 //        Employee employee = entityManager.find(Employee.class,1);
 //        System.out.println("****************Fetched Employee");
@@ -24,11 +27,13 @@ public class JpaStarterRead {
 
 //        PayStub payStub = entityManager.find(PayStub.class,5);
 //        System.out.println(payStub.getEmployee());
+//
+//        System.out.println("****** Before Fetching employees");
+//        Employee employee = entityManager.find(Employee.class,1);
+//        System.out.println("****** Before Accessing payStub");
+//        System.out.println(employee.getPayStub());
 
-        System.out.println("****** Before Fetching employees");
-        Employee employee = entityManager.find(Employee.class,1);
-        System.out.println("****** Before Accessing payStub");
-        System.out.println(employee.getPayStub());
+
 
 
     }
