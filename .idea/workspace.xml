@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5f63b88-47bb-4486-9950-65c0ce10e00c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/ezbrains/EmailGroup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/ezbrains/JpaStarterUpdate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/ezbrains/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ezbrains/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/ezbrains/JpaStarterMainWrite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ezbrains/JpaStarterMainWrite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/ezbrains/JpaStarterRead.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ezbrains/JpaStarterRead.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/ezbrains/PayStub.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ezbrains/PayStub.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/ezbrains/JpaStarterUpdate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ezbrains/JpaStarterUpdate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,7 +54,7 @@
       <recent name="io.ezbrains" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.JpaStarterRead">
+  <component name="RunManager" selected="Application.JpaStarterMainWrite">
     <configuration name="JpaStarterMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="io.ezbrains.JpaStarterMain" />
       <module name="jpa-starter" />
@@ -101,8 +96,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.JpaStarterRead" />
         <item itemvalue="Application.JpaStarterMainWrite" />
+        <item itemvalue="Application.JpaStarterRead" />
         <item itemvalue="Application.JpaStarterMain" />
       </list>
     </recent_temporary>
