@@ -9,7 +9,6 @@ All notable changes to this project will be documented in this file.
 - added payStub class
 - added @ManyToOne to payStub and @OneToOne relationship Employee 
 - added PayStub list to employee class
--
 
 #  (2023-09-09)
 
