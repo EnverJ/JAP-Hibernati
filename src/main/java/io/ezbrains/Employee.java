@@ -34,7 +34,7 @@ public class Employee {
     @OneToOne(fetch = FetchType.LAZY)
     private AccessCard card;
 
-    @OneToMany(mappedBy = "employee")
+    @OneToMany(mappedBy = "employee", cascade = CascadeType.REMOVE)
     private List<PayStub> payStub = new ArrayList<>();
 
     @ManyToMany (fetch = FetchType.EAGER)
