@@ -94,6 +94,9 @@ public class JpaStarterMainWrite {
         EntityTransaction transaction = entityManager.getTransaction();
         transaction.begin();
         entityManager.persist(employee);
+ //       entityManager.detach(employee); // this will remove the employee from entity, but it is still in DB.
+ //       entityManager.merge(employee);  // undo detach
+      //  entityManager.clear();  // clear the persistence concept. any changes to entity will nt be refleced.
         entityManager.persist(employee1);
 
         entityManager.persist(card1);
