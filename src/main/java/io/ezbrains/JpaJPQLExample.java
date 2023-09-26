@@ -25,6 +25,7 @@ public class JpaJPQLExample {
        // TypedQuery<Employee> query = entityManager.createQuery("select e from Employee e where e.card.isActive=true", Employee.class);
 
         //Freeform queries and custom types
+
         TypedQuery<Employee> query = entityManager.createQuery("select e from Employee e", Employee.class);
         List<Employee> resultList = query.getResultList();
         resultList.forEach(System.out::println);
