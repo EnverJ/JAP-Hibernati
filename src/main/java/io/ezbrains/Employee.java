@@ -10,6 +10,8 @@ import java.util.List;
 
 @Entity
 @Table(name = "EMPLOYEE_DATA") // (table name is optional, by default it is class name)
+@NamedQuery(query = "Select e from Employee where e.age > :age order by e.name", name = "emp name and age asc")   // this query is frequently used.  C.45
+@NamedQuery(query = "Select e from Employee order by e.name", name = "emp name asc")
 public class Employee {
 
     @Id   // primary key
